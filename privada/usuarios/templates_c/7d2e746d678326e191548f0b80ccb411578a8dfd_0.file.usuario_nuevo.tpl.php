@@ -1,11 +1,42 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.36, created on 2021-09-11 00:59:35
+  from 'C:\wamp64\www\sis_carpinteria\privada\usuarios\templates\usuario_nuevo.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.36',
+  'unifunc' => 'content_613bff777162a3_74948894',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7d2e746d678326e191548f0b80ccb411578a8dfd' => 
+    array (
+      0 => 'C:\\wamp64\\www\\sis_carpinteria\\privada\\usuarios\\templates\\usuario_nuevo.tpl',
+      1 => 1631321969,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_613bff777162a3_74948894 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href ="../{$direc_css}" type ="text/css">
-	<script type="text/javascript" src="../js/expresiones_regulares.js"></script>
-	<script type="text/javascript" src="js/validar_usuario.js"></script>
-	<script type="text/javascript" src="../../ajax.js"></script>
-	<script type="text/javascript" >
+	<link rel="stylesheet" href ="../<?php echo $_smarty_tpl->tpl_vars['direc_css']->value;?>
+" type ="text/css">
+	<?php echo '<script'; ?>
+ type="text/javascript" src="../js/expresiones_regulares.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type="text/javascript" src="js/validar_usuario.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type="text/javascript" src="../../ajax.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type="text/javascript" >
 	  function buscar(){
 		var d1, contenedor, url;
 	    contenedor = document.getElementById('personas');
@@ -104,7 +135,8 @@
 		ajax.send(param);
 
 	 }
-	</script>
+	<?php echo '</script'; ?>
+>
 </head>
 <body>
 	
@@ -200,3 +232,5 @@
 	
 	</body>
 </html>
+<?php }
+}

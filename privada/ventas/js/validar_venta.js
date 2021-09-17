@@ -14,11 +14,12 @@ function validar(){
 		document.formu.fecha_venta.focus();
 		return;
 	}
-	if ((!v22.test(monto_venta)) || (monto_venta == "") || (monto_venta<='0')) {
-		alert("El campo monto venta es incorrecto o el campo esta vacio");
+		if (monto_venta==""){
+		alert("El campo monto esta vacio");
 		document.formu.monto_venta.focus();
 		return;
 	}
+	
 		document.formu.submit();
 
 }

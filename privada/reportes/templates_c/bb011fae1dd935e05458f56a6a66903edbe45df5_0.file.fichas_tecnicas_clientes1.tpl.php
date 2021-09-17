@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2021-09-16 22:36:17
-  from 'C:\wamp64\www\sis_carpinteria\privada\reportes\templates\fichas_tecnicas_proveedores1.tpl' */
+/* Smarty version 3.1.36, created on 2021-09-16 23:14:09
+  from 'C:\wamp64\www\sis_carpinteria\privada\reportes\templates\fichas_tecnicas_clientes1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_6143c6e1efbc02_58599007',
+  'unifunc' => 'content_6143cfc16341c5_57059382',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '787f0509f9c258469dfb9b46cb83a65ede871051' => 
+    'bb011fae1dd935e05458f56a6a66903edbe45df5' => 
     array (
-      0 => 'C:\\wamp64\\www\\sis_carpinteria\\privada\\reportes\\templates\\fichas_tecnicas_proveedores1.tpl',
-      1 => 1628565658,
+      0 => 'C:\\wamp64\\www\\sis_carpinteria\\privada\\reportes\\templates\\fichas_tecnicas_clientes1.tpl',
+      1 => 1631832965,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6143c6e1efbc02_58599007 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6143cfc16341c5_57059382 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -43,7 +43,7 @@ function content_6143c6e1efbc02_58599007 (Smarty_Internal_Template $_smarty_tpl)
 " width="70%">
 	  	</td>
 	  	<td align="center" width="80%">
-	  		<h1> FICHA TECNICA DE PROVEEDOR </h1>
+	  		<h1> FICHA TECNICA DE CLIENTE</h1>
 	  	</td>
 	  </tr>
 	</table>
@@ -54,30 +54,32 @@ function content_6143c6e1efbc02_58599007 (Smarty_Internal_Template $_smarty_tpl)
 				<td>
 					<table border="0">
 						<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['proveedor']->value, 'r');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['cliente']->value, 'r');
 $_smarty_tpl->tpl_vars['r']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
 $_smarty_tpl->tpl_vars['r']->do_else = false;
 ?>
 						<tr>
-							<th align="right">Caracteristicas</th><th>:</th>
-							<td><input type="text" name="caracteristicas" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['caracteristicas'];?>
-" disabled=""></td>
-						</tr>
-						<tr>
-							<th align="right">Nombres</th><th>:</th>
+							<th align="right">NOMBRES</th><th>:</th>
 							<td><input type="text" name="nombres" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['nombres'];?>
 " disabled=""></td>
 						</tr>
 						<tr>
-							<th align="right">Apellidos</th><th>:</th>
+							<th align="right">APELLIDOS</th><th>:</th>
 							<td><input type="text" name="apellidos" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['apellidos'];?>
 " disabled=""></td>
 						</tr>
 						<tr>
-							<th align="right">Telefono</th><th>:</th>
+							<th align="right">TELEFONO</th><th>:</th>
 							<td><input type="text" name="telefono" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['telefono'];?>
 " disabled=""></td>
+						</tr>
+						<tr>
+							<th align="right">TIPO CLIENTE</th><th>:</th>
+							<td>
+								<?php if ($_smarty_tpl->tpl_vars['r']->value['tipo_cliente'] == 'N') {?><input type="text" name="tipo_cliente" value="NUEVO" disabled=""><?php }?>
+								<?php if ($_smarty_tpl->tpl_vars['r']->value['tipo_cliente'] == 'A') {?><input type="text" name="tipo_cliente" value="ANTIGUO" disabled=""><?php }?>
+							</td>
 						</tr>
 						<?php
 }

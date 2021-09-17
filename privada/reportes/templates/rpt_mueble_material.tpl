@@ -12,7 +12,7 @@
 	 		document.formu.material.focus();
 	 		return;
 	 	}
-	 	ventanaCalendario = window.open("rpt_muebles_material1.php?material=" + material , "calendario", "width=600,height=550,left=100,top=100,scrollbars=yes,menubars=no,statusbar=NO,status=NO,resizable=YES,location=NO")
+	 	ventanaCalendario = window.open("rpt_mueble_material1.php?material=" + material , "calendario", "width=600,height=550,left=100,top=100,scrollbars=yes,menubars=no,statusbar=NO,status=NO,resizable=YES,location=NO")
 	 }
 	</script>
 	{/literal}
@@ -26,9 +26,9 @@
 		  <select name="material">
 		  	<option value="">--Seleccione--</option>
 		  	<option value="T">Todos</option>
-		  	<option value="MC">Madera Cedro</option>
-		  	<option value="MR">Madera Roble</option>
-		  	<option value="M">Melamina</option>
+		  	<option value="MADERA CEDRO">Madera Cedro</option>
+		  	<option value="MADERA ROBLE">Madera Roble</option>
+		  	<option value="MELAMINA">Melamina</option>
 		  </select>
 		 </p>
 		 <p>

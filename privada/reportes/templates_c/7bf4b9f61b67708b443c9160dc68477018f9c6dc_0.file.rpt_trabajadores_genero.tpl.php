@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2021-08-10 01:56:11
-  from 'C:\wamp64\www\sis_carpinteria\privada\reportes\templates\rpt_personas_genero.tpl' */
+/* Smarty version 3.1.36, created on 2021-09-17 03:56:02
+  from 'C:\wamp64\www\sis_carpinteria\privada\reportes\templates\rpt_trabajadores_genero.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_6111dcbbc554f9_79144143',
+  'unifunc' => 'content_614411d2972366_67193253',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'd712232bebcd89f2ed229b97dd84749f1b84ebea' => 
+    '7bf4b9f61b67708b443c9160dc68477018f9c6dc' => 
     array (
-      0 => 'C:\\wamp64\\www\\sis_carpinteria\\privada\\reportes\\templates\\rpt_personas_genero.tpl',
-      1 => 1627488592,
+      0 => 'C:\\wamp64\\www\\sis_carpinteria\\privada\\reportes\\templates\\rpt_trabajadores_genero.tpl',
+      1 => 1631850626,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6111dcbbc554f9_79144143 (Smarty_Internal_Template $_smarty_tpl) {
+function content_614411d2972366_67193253 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="esp">
 <head>
@@ -37,7 +37,7 @@ function content_6111dcbbc554f9_79144143 (Smarty_Internal_Template $_smarty_tpl)
 	 		document.formu.genero.focus();
 	 		return;
 	 	}
-	 	ventanaCalendario = window.open("rpt_personas_genero1.php?genero=" + genero , "calendario", "width=600,height=550,left=100,top=100,scrollbars=yes,menubars=no,statusbar=NO,status=NO,resizable=YES,location=NO")
+	 	ventanaCalendario = window.open("rpt_trabajadores_genero1.php?genero=" + genero , "calendario", "width=600,height=550,left=100,top=100,scrollbars=yes,menubars=no,statusbar=NO,status=NO,resizable=YES,location=NO")
 	 }
 	<?php echo '</script'; ?>
 >
@@ -45,7 +45,7 @@ function content_6111dcbbc554f9_79144143 (Smarty_Internal_Template $_smarty_tpl)
 </head>
 <body>
 	<div class="formu_ingreso_datos">
-		<h2> RPT DE PERSONAS POR GENERO</h2>
+		<h2> RPT DE TRABAJADORES POR GENERO</h2>
 		<form method="post" name="formu">
 		<p>
 		  <b>*Seleccione genero</b>

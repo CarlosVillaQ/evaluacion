@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="js/validar_persona.js"></script>
 </head>
 <body>
-	<div class="formu_ingreso_datos">
+	
 		<form action="persona_nuevo1.php" method="post" name="formu">
 			<h2>REGISTRAR PERSONA</h2>
 			  <input type="text" name="ci" size="15" placeholder="Carnet de Identidad">(*)
@@ -38,6 +38,6 @@
 			<p><b>(*)Campos Obligatorios</b></p>
 		</form>
 		
-	</div>
+	
 </body>
 </html>

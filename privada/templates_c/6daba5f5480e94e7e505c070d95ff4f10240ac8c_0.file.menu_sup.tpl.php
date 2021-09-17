@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.36, created on 2021-08-10 01:45:53
+/* Smarty version 3.1.36, created on 2021-09-10 23:07:34
   from 'C:\wamp64\www\sis_carpinteria\privada\templates\menu_sup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_6111da51b58ca0_38298552',
+  'unifunc' => 'content_613be536988230_40604806',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6111da51b58ca0_38298552 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613be536988230_40604806 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>

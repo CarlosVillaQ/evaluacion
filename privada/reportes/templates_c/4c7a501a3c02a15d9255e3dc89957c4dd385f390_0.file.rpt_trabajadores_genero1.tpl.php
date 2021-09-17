@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2021-08-10 02:17:05
-  from 'C:\wamp64\www\sis_carpinteria\privada\reportes\templates\rpt_muebles_material1.tpl' */
+/* Smarty version 3.1.36, created on 2021-09-17 03:56:05
+  from 'C:\wamp64\www\sis_carpinteria\privada\reportes\templates\rpt_trabajadores_genero1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_6111e1a16eb312_44603819',
+  'unifunc' => 'content_614411d5514727_99741538',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '73c86667a68ae9441be405bcd2e43bd693fe6304' => 
+    '4c7a501a3c02a15d9255e3dc89957c4dd385f390' => 
     array (
-      0 => 'C:\\wamp64\\www\\sis_carpinteria\\privada\\reportes\\templates\\rpt_muebles_material1.tpl',
-      1 => 1628561813,
+      0 => 'C:\\wamp64\\www\\sis_carpinteria\\privada\\reportes\\templates\\rpt_trabajadores_genero1.tpl',
+      1 => 1631850685,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6111e1a16eb312_44603819 (Smarty_Internal_Template $_smarty_tpl) {
+function content_614411d5514727_99741538 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +41,7 @@ function content_6111e1a16eb312_44603819 (Smarty_Internal_Template $_smarty_tpl)
    	 	<td> <img src="../carpinteria/logos/<?php echo $_smarty_tpl->tpl_vars['logo_carpinteria']->value;?>
 " width="70%"></td>
    	 	<td align="center" width="80%">
-   	 		<h1> MUEBLES -- MATERIAL </h1>
+   	 		<h1> TRABAJADORES -- GENERO </h1>
    	 	</td>
    	 </tr>
    </table>
@@ -49,11 +49,11 @@ function content_6111e1a16eb312_44603819 (Smarty_Internal_Template $_smarty_tpl)
    <center>
    	<table border="1" cellspacing="0">
    	  <tr>
-   	  	<th>NRO</th><th>TAMAÑO</th><th>TIPO_MUEBLE</th><th>MATERIAL</th><th>COLOR</th>
+   	  	<th>NRO</th><th>APELLIDOS</th><th>NOMBRES</th><th>GENERO</th>
    	  </tr>
    	  <?php $_smarty_tpl->_assignInScope('b', "1");?>
    	  <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['muebles_material1']->value, 'r');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['trabajadores_genero1']->value, 'r');
 $_smarty_tpl->tpl_vars['r']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
 $_smarty_tpl->tpl_vars['r']->do_else = false;
@@ -61,9 +61,11 @@ $_smarty_tpl->tpl_vars['r']->do_else = false;
    	  <tr>
    	  	<td align="center"><?php echo $_smarty_tpl->tpl_vars['b']->value;?>
 </td>
-   	  	<td><?php echo $_smarty_tpl->tpl_vars['r']->value['nombres'];?>
+   	  	<td><?php echo $_smarty_tpl->tpl_vars['r']->value['apellidos'];?>
 </td>
-   	  
+         <td><?php echo $_smarty_tpl->tpl_vars['r']->value['nombres'];?>
+</td>
+   	  	<td><?php if ($_smarty_tpl->tpl_vars['r']->value['genero'] == 'F') {?>FEMENINO<?php } else { ?>MASCULINO<?php }?></td>
    	  	<?php $_smarty_tpl->_assignInScope('b', ((string)($_smarty_tpl->tpl_vars['b']->value+1)));?>
    	  	<?php
 }

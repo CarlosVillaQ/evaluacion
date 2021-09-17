@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.36, created on 2021-09-17 01:38:06
-  from 'C:\wamp64\www\sis_carpinteria\privada\reportes\templates\rpt_muebles_material.tpl' */
+/* Smarty version 3.1.36, created on 2021-09-17 01:40:47
+  from 'C:\wamp64\www\sis_carpinteria\privada\reportes\templates\rpt_mueble_material.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_6143f17eebb889_92497995',
+  'unifunc' => 'content_6143f21f3b0dd5_93492225',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'f34e129945d45244b8d731a9627809e567903f86' => 
+    '6d54c26850ce1cd5b828b6bddf786e22c5bc22c2' => 
     array (
-      0 => 'C:\\wamp64\\www\\sis_carpinteria\\privada\\reportes\\templates\\rpt_muebles_material.tpl',
+      0 => 'C:\\wamp64\\www\\sis_carpinteria\\privada\\reportes\\templates\\rpt_mueble_material.tpl',
       1 => 1631842678,
       2 => 'file',
     ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6143f17eebb889_92497995 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6143f21f3b0dd5_93492225 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="esp">
 <head>

@@ -1,11 +1,42 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.36, created on 2021-09-18 00:14:46
+  from 'C:\wamp64\www\sis_carpinteria\privada\ventas\templates\venta_nuevo.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.36',
+  'unifunc' => 'content_61452f76e5bc51_64697377',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '49694f8a06039b66167877c86e81dcc84e93a24a' => 
+    array (
+      0 => 'C:\\wamp64\\www\\sis_carpinteria\\privada\\ventas\\templates\\venta_nuevo.tpl',
+      1 => 1631924079,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_61452f76e5bc51_64697377 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href ="../{$direc_css}" type ="text/css">
-	<script type="text/javascript" src="../js/expresiones_regulares.js"></script>
-	<script type="text/javascript" src="js/validar_venta.js"></script>
-	<script type="text/javascript" src="../../ajax.js"></script>
-	<script type="text/javascript" >
+	<link rel="stylesheet" href ="../<?php echo $_smarty_tpl->tpl_vars['direc_css']->value;?>
+" type ="text/css">
+	<?php echo '<script'; ?>
+ type="text/javascript" src="../js/expresiones_regulares.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type="text/javascript" src="js/validar_venta.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type="text/javascript" src="../../ajax.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type="text/javascript" >
 	  function buscar(){
 		var d1, contenedor, url;
 	    contenedor = document.getElementById('clientes');
@@ -85,7 +116,8 @@
 		ajax.send(param);
 
 	 }
-	</script>
+	<?php echo '</script'; ?>
+>
 </head>
 <body>
 	
@@ -178,3 +210,5 @@
 	
 	</body>
 </html>
+<?php }
+}
